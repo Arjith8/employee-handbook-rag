@@ -12,6 +12,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "weasyprint>=70.0",
 ]
 
 [tool.pytest.ini_options]

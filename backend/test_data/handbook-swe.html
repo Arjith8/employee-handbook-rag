@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="windows-1252">
+  <title>Zorgleflap Employee Handbook - Software Engineering</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      border-bottom: 3px solid #000;
+      padding-bottom: 8px;
+    }
+    h2 {
+      margin-top: 40px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 16px 0;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    .note {
+      background: #f6f6f6;
+      padding: 12px;
+      border-left: 4px solid #333;
+    }
+    nav.toc {
+      break-after: page;
+      background: #fafafa;
+      border: 1px solid #ddd;
+      padding: 16px 24px;
+    }
+  
+    @media print {
+      h2 { break-before: page; }
+      nav.toc h2 { break-before: auto; }
+    }
+    h2 { break-before: page; }
+    nav.toc h2 { break-before: auto; }
+
+  
+    header.cover {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      break-after: page;
+    }
+    header.cover h1 {
+      border-bottom: none;
+      font-size: 2.2em;
+      margin-bottom: 0.3em;
+    }
+    header.cover p {
+      margin: 0.2em 0;
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="cover">
+  <h1>Zorgleflap Widgets Ltd — Employee Handbook, Software Engineering</h1>
+  <p>
+    Effective 1 Jan 2026.
+    Scope: Software Engineers only.
+    Contact: hr@zorgleflap.test
+  </p>
+  </header>
+
+  <nav class="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#employment">Employment Basics</a></li>
+      <li><a href="#leave">Leave Policy</a></li>
+      <li><a href="#wfh">Work From Home (SWE Rule)</a></li>
+      <li><a href="#benefits">Benefits + Oncall</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#payroll">Payroll Appendix</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="welcome">1. Welcome</h2>
+  <p>
+    Welcome SWE. CEO is Baron von Picklefoot.
+    This SWE edition overrides the common handbook where they differ.
+  </p>
+
+  <h2 id="employment">2. Employment Basics</h2>
+  <p>
+    Full-time 40 hours/week. Probation 3 months. Notice 30 days.
+  </p>
+
+  <h2 id="leave">3. Leave Policy</h2>
+  <h3>3.1 Annual Leave</h3>
+  <p>
+    24 days paid annual leave. Up to 10 days carry forward.
+    Code LV-ANN-24.
+  </p>
+
+  <h3>3.2 Paternity Leave</h3>
+  <p>
+    Eligible fathers (6+ months service) may avail
+    <strong>up to 1 month (30 calendar days) of paternity leave</strong>.
+    Code LV-PAT-30.
+
+  <p>
+    Leave is how we stay sane through the long polar nights. Plan ahead,
+    talk to your team, and record everything in the HR portal. Leave codes
+    like LV-ANN-24 exist so payroll can process without guessing. Whatever
+    whatever — when in doubt, ask HR before you book flights.
+  </p>
+
+  </p>
+
+  <h2 id="wfh">4. Work From Home (SWE Rule)</h2>
+  <p>
+    SWE may work from home
+    <strong>up to 4 days per week</strong>.
+    Overrides common 2-day rule.
+  </p>
+
+  <h2 id="benefits">5. Benefits + Oncall</h2>
+  <p>
+    Health insurance 100% employee, 50% dependents to $5,000.
+    Offsite $777.77 per person.
+    On-call allowance $200/week, code ONCALL-200.
+    Wellness break 30 mins daily paid.
+  </p>
+
+  <h2 id="security">6. Security</h2>
+  <p>
+    Badge required. Fridge code FRIDGE-00-PIZZA.
+    Laptop encryption mandatory.
+
+  <p>
+    Security is everyone's job. Use a password manager, enable 2FA everywhere,
+    and lock your laptop when you leave your desk. Report phishing with the
+    one-click button. Do not plug unknown USB drives. The Northpole fridge code
+    changes quarterly — do not write it on sticky notes.
+  </p>
+  <p>
+    Laptops are encrypted and remotely wipeable. Lost device? Report within 2 hours
+    to security@zorgleflap.test. Production access needs ticket + approval + expiry.
+    Customer data never goes on personal devices. Whatever whatever — when unsure,
+    ask security before you click.
+  </p>
+  <p>
+    Office badges are personal. Tailgating is prohibited even if the person behind
+    you is carrying three pickle pizzas and looks trustworthy. Visitors must sign in
+    and be escorted. We strive for excellence in keeping secrets secret.
+  </p>
+
+  </p>
+
+  <h2 id="payroll">7. Payroll Appendix (Overrides Section 3)</h2>
+  <p class="note">
+    Paternity leave
+    <strong><p>SWE payroll runs monthly. LoP = salary/30 x LoP days. Raise issues in 15 days. Whatever whatever.</p><p>Wellness, offsites, on-call all flow through payroll with codes. Keep bank details current. We strive for excellence in getting paid right.</p>
+  exceeding 15 days is marked Loss of Pay (LoP)</strong>.
+    Only first 15 days paid.
+    Wellness breaks over 15 mins on Fridays unpaid.
+  </p>
+
+  <table>
+    <tr>
+      <th>Policy</th>
+      <th>SWE Entitlement</th>
+      <th>Paid?</th>
+    </tr>
+    <tr>
+      <td>WFH</td>
+      <td>4 days/week</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Paternity</td>
+      <td>30 days</td>
+      <td>15 days, rest LoP</td>
+    </tr>
+    <tr>
+      <td>Annual</td>
+      <td>24 days</td>
+      <td>Yes</td>
+    </tr>
+  </table>
+
+  <p>
+    
+  <p>
+    SWE life at Zorgleflap means shipping widgets and keeping the on-call rotation
+    humane. Sprint planning is Mondays, demos are Fridays. Design docs are required
+    for changes over 3 days of work. Whatever whatever — small PRs merge faster.
+  </p>
+  <p>
+    On-call is one week in six, compensated $200 per week, code ONCALL-200.
+    Alerts must have runbooks. Noisy alerts get fixed, not muted. Postmortems are
+    blameless. We strive for excellence in uptime and sleep.
+  </p>
+  <p>
+    Home office for SWE reimbursed to $300 per year. Monitor, chair, heater, cables.
+    Internet not reimbursed except on-call weeks. Be reachable on chat in core hours.
+    Glad to have you here, shipping from anywhere.
+  </p>
+
+  Canary: blorptastic wombat jamboree ZQX-999.
+  </p>
+  <!-- Encoding: Windows-1252. Café naïve résumé — “smart quotes” — tested. -->
+
+
+</body>
+</html>
