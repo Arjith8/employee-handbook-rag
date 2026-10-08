@@ -23,7 +23,6 @@ HERE = Path(__file__).parent
 
 ENCODINGS: dict[str, str] = {
     "handbook.html": "utf-8",
-    "handbook-swe.html": "windows-1252",
     "handbook-c-suite.html": "utf-16",
 }
 
