@@ -8,15 +8,15 @@ client = TestClient(app)
 
 
 class TestUpload:
-    def test_upload(self):
-        content = b"%PDF-1.4 fake handbook"
+    def test_upload(self, pdf_file: Path):
+        content = pdf_file.read_bytes()
         response = client.post(
             "/upload",
-            files={"file": ("handbook.pdf", content, "application/pdf")},
+            files={"file": (pdf_file.name, content, "application/pdf")},
         )
         assert response.status_code == 200
         data = UploadResponse.model_validate(response.json())
-        assert data.filename == "handbook.pdf"
+        assert data.filename == pdf_file.name
         assert data.size_bytes == len(content)
 
         saved = Path(data.path)
